@@ -1,0 +1,17 @@
+{
+  "schema": "pqguard-review-cpu-20261123-v1",
+  "profiles": ["classical", "post_quantum"],
+  "implementations": ["submitted_cbas", "conventional_strong"],
+  "concurrency": [1, 8, 32, 64],
+  "independent_process_repetitions": 5,
+  "minimum_requests": 128,
+  "requests_per_worker": 8,
+  "warmup_requests": 5,
+  "payload_bytes": 1024,
+  "schedule_seed": 20261123,
+  "cell_timeout_seconds": 900,
+  "formal_lemma_timeout_seconds": 240,
+  "whole_run_timeout_hours": 12,
+  "scope": "CPU-only; experimental in-process hybrid channel; process-isolated loopback witness",
+  "not_run": ["GPU integrated batching", "independent-host remote witness", "computational AKE proof"]
+}

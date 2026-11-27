@@ -1,0 +1,49 @@
+{
+  "schema": "pqguard-gpu-continuous-merkle-v1",
+  "model": "Qwen2.5-14B-Instruct",
+  "engine": "vllm-0.10.2-V1",
+  "seeds": [
+    20261124,
+    20261125,
+    20261126
+  ],
+  "concurrency": [
+    1,
+    32
+  ],
+  "workloads": {
+    "short": [
+      [
+        64,
+        64
+      ]
+    ],
+    "long": [
+      [
+        1024,
+        256
+      ]
+    ]
+  },
+  "modes": [
+    "submitted_full",
+    "merkle8"
+  ],
+  "measured_requests_per_cell": 128,
+  "warmup_requests_per_cell": 8,
+  "batch_size": 8,
+  "batch_max_wait_ms": 50,
+  "cell_timeout_seconds": 1800,
+  "request_timeout_seconds": 600,
+  "max_model_len": 4096,
+  "max_num_seqs": 32,
+  "max_num_batched_tokens": 4096,
+  "gpu_memory_utilization": 0.85,
+  "dtype": "bfloat16",
+  "prefix_caching": false,
+  "cuda_graphs": false,
+  "temperature": 0,
+  "ignore_eos": true,
+  "scope": "new local/remote signed-witness placement comparison over SSH; CPU architectures/storage and transport differ, not isolated network causality; closed-loop GPU response release, not verified execution",
+  "gpu_experiments_started": false
+}

@@ -1,0 +1,36 @@
+{
+  "scope": "Unchanged published outcome counts; layout-only replot. Signature operations, proof checks and replay groups have different units, not security probabilities.",
+  "categories": [
+    {
+      "label": "Matched attacks rejected",
+      "count": 6000
+    },
+    {
+      "label": "Clean controls accepted",
+      "count": 6000
+    },
+    {
+      "label": "Lifecycle signatures verified",
+      "count": 5120
+    },
+    {
+      "label": "Merkle proofs verified",
+      "count": 4800
+    },
+    {
+      "label": "Merkle mutations rejected",
+      "count": 3322
+    },
+    {
+      "label": "Replay groups: exactly one",
+      "count": 1000
+    }
+  ],
+  "provenance": {
+    "previous_figure_sha256": "7bbe7a6c1699b89dd9abf4fe6b4c2d1ef6d3e9e2e363f7404c0448e955f408c4",
+    "matched_controls": "Online Resource 2: current_validation/HISTORICAL_RECOUNT.json and retained matched traces",
+    "lifecycle": "Online Resource 2: component_data/r11_replacement_matrix; 2560 signed admission/completion pairs",
+    "merkle": "Online Resource 2: component_data/tifs_followup_r3/raw/merkle_verification/E2_merkle_fixtures.json; independently reverified",
+    "replay": "Online Resource 2: historical proxy replay records; 1000 groups"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-4.19.90-2107.6.0.0192.8.oe1.bclinux.x86_64-x86_64-with-glibc2.35",
+  "liboqs_sha256": "d62bbffde4eaf9f314bcfc9e75ee8e81e83f75daf4d1c9e2ed4a42aa0ea48110",
+  "liboqs_bytes": 660704,
+  "gpu_model_loaded": false,
+  "minimum_gpu_cpu": 14,
+  "minimum_gpu_memory_gib": 120
+}

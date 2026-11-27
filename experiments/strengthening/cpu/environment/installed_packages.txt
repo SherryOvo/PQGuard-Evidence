@@ -1,0 +1,5 @@
+cffi==2.1.1
+cryptography==50.0.2
+liboqs-python==0.16.0.1
+pip==24.0
+pycparser==3.11

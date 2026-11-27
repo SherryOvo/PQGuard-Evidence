@@ -27,3 +27,7 @@ shasum -a 256 -c SHA256SUMS
 ```
 
 Each archive contains its own `SHA256SUMS`, `README.txt` and verifier scripts.
+
+## Experiment scripts
+
+CPU, GPU, remote-witness, component and verification scripts are available in [`experiments/`](experiments/README.md). See that directory for campaign boundaries, dependency manifests, evidence requirements and source checksums. The existing release archives and their checksums are unchanged.

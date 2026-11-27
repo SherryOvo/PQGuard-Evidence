@@ -1,0 +1,83 @@
+{
+  "schema": "pqguard-review-strengthening-20261124",
+  "cpu": {
+    "profiles": [
+      "classical",
+      "post_quantum"
+    ],
+    "seeds": [
+      20261124,
+      20261125,
+      20261126
+    ],
+    "modules": [
+      "binding",
+      "version_floor",
+      "retention",
+      "io_failure",
+      "privacy",
+      "multiwriter",
+      "proxy_diagnostic",
+      "io_attribution"
+    ],
+    "binding_records": 32,
+    "capacity_sizes": [
+      100,
+      1000,
+      5000
+    ],
+    "multiwriter_processes": 4,
+    "multiwriter_groups": 12,
+    "proxy_requests": 32,
+    "io_sample_mib": 64
+  },
+  "gpu": {
+    "not_before_utc": "2026-11-24T06:30:00+00:00",
+    "seeds": [
+      20261124,
+      20261125,
+      20261126
+    ],
+    "placements": [
+      "local",
+      "remote"
+    ],
+    "workloads": {
+      "short": [
+        [
+          64,
+          64
+        ]
+      ],
+      "long": [
+        [
+          1024,
+          256
+        ]
+      ]
+    },
+    "concurrency": [
+      1,
+      32
+    ],
+    "modes": [
+      "submitted_full",
+      "merkle8"
+    ],
+    "measured_requests_per_cell": 128,
+    "warmup_requests_per_cell": 8,
+    "expected_cells": 48,
+    "expected_measured_requests": 6144,
+    "expected_warmups": 384
+  },
+  "scope": {
+    "new_branch": true,
+    "original_measurements_immutable": true,
+    "cpu_no_gpu_import": true,
+    "cpu_results_not_gpu_serving_performance": true,
+    "full_AKE_proof": "separate proof obligation, not supplied by finite tests",
+    "hardware_execution_attestation": "requires a separate supported trust mechanism",
+    "retirement_not_full_audit_gc": true,
+    "proxy_diagnostic_not_historical_causal_reproduction": true
+  }
+}
